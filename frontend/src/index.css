@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,680&family=Outfit:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --color-cream: #f3eee4;
+  --color-paper: #fffdf8;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-forest: #1b4332;
+  --color-forest-deep: #10281e;
+  --color-leaf: #2d6a4f;
+  --color-sand: #e6dccb;
+  --color-gold: #a47148;
+  --color-line: #e7dccb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 90% -10%, rgba(164, 113, 72, 0.16), transparent 55%),
+    var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+input, select, textarea {
+  background: #fff;
+}
